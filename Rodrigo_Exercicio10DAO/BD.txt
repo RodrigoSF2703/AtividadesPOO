@@ -1,0 +1,13 @@
+-- Criação do banco de dados
+CREATE DATABASE pessoa;
+
+-- Utilização do banco de dados
+USE pessoa;
+
+-- Criação da tabela cadastro
+CREATE TABLE cadastro (
+  CPF VARCHAR(11) PRIMARY KEY,
+  nome VARCHAR(200) NOT NULL,
+  endereco VARCHAR(200) NOT NULL,
+  data_nascimento DATE NOT NULL
+);
